@@ -46,7 +46,7 @@ app.use(bodyParser.json());
 app.post('/imageurl', (req, res) => {handleApiCall(req,res)})
 
 app.get('/', (req, res)=>{
-	res.send(db.users);
+	res.send("it is working");
 })
 
 app.post('/register', (req, res)=>{// adds a new user to the database destructuring what the users sends inm the body of the request
